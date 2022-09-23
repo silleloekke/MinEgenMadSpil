@@ -1,0 +1,159 @@
+
+.container{
+}
+.header{
+    height: 80px;
+    width: 100%;
+    background: antiquewhite;
+}
+.footer{
+    height: 400px;
+    width: 100%;
+    background: antiquewhite;
+}
+.content1{
+    height:700px;
+    width: 100%;
+    background: #a1c298
+}
+.content2{
+    height:110px;
+    width: 100%;
+    background: antiquewhite;
+    font-family: 'Intro Black', sans-serif;
+}
+
+/*Tekst på billde*/
+.content-with-photos{
+    height: auto;
+    width: 100%;
+}
+.bigTextCentered {
+    font-family: 'Intro Black', sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: antiquewhite;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 10px;
+}
+
+/*"Læs mere" knap på billed*/
+.content-with-photos .btn {
+    font-family: 'Intro Regular', sans-serif;
+    position: absolute;
+    top: 85%;
+    left: 45%;
+    background-color: antiquewhite;
+    color: black;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.content-with-photos .btn:hover {
+    background-color: #a1c298;
+    color: antiquewhite;
+}
+
+
+.smallTextCentered{
+    margin: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.information{
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Intro Regular', sans-serif;
+    text-align-last: left;
+    text-align: left;
+    line-height: 1.6;
+    width: 30em;
+    color: White;
+}
+.headerAlign{
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    text-align-last: left;
+    font-family: 'Intro Black', sans-serif;
+    font-weight: bold;
+    color: White;
+}
+.headerAlignReverse{
+    padding: 10px;
+    margin: 10px;
+    font-size: 30px;
+    text-align: right;
+    font-family: 'Intro Black', sans-serif;
+    font-weight: bold;
+    color: White;
+}
+.informationReverse{
+    padding: 10px;
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Intro Regular', sans-serif;
+    text-align-last: right;
+    text-align: right;
+    line-height: 1.6;
+    width: 30em;
+    color: White;
+}
+
+/*Menubar / øverst på hjemmesiden*/
+.button-group .button {
+    background-color:antiquewhite;
+    border: none;
+    color: black;
+    padding: 10px 32px;
+    margin: 1px 10px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Intro Demo', sans-serif;
+    font-weight: bold;
+}
+.button:hover {
+    color: #a1c298;
+}
+
+/*Knapper med "links" til artikler*/
+.button-group-omtale .button {
+    background-color:antiquewhite;
+    /*border: none;*/
+    border: 2px solid #a1c298;
+    color: black;
+    padding:10px 24px;
+    /*padding: 15px 32px;*/
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 10px 10px;
+    cursor: pointer;
+    font-family: 'Intro Demo', sans-serif;
+    font-weight: bold;
+}
+.button1{
+    background-color: antiquewhite;
+    color: black;
+    border: 5px solid #a1c298;
+}
+.button1:hover{
+    background-color: #a1c298;
+    color: white;
+}

@@ -1,0 +1,308 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css"/>
+
+    <link href="http://fonts.cdnfonts.com/css/intro" rel="stylesheet">
+
+    <link href="http://fonts.cdnfonts.com/css/coral-colour" rel="stylesheet">
+
+    <link href="http://fonts.cdnfonts.com/css/intro-black" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <title>Stop Mad Spild</title>
+    <!-- CSS - TODO: virker ikke inde i separat css fill? -->
+ <style>
+
+         /*Menubar / øverst på hjemmesiden*/
+        .button-group .button {
+         background-color:antiquewhite;
+         border: none;
+         color: black;
+         padding: 10px 32px;
+         margin: 1px 10px;
+         text-align: right;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 16px;
+         cursor: pointer;
+         font-family: 'Intro Demo', sans-serif;
+         font-weight: bold;
+     }
+        .button:hover {
+         color: #a1c298;
+     }
+        .header{
+            height: 80px;
+            width: 100%;
+            background: antiquewhite;
+        }
+
+        /*Tekst på billde*/
+        .content-with-photos{
+            height: auto;
+            width: 100%;
+        }
+        .bigTextCentered {
+            font-family: 'Intro Black', sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            color: antiquewhite;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin: 10px;
+        }
+
+        /*"Læs mere" knap på billed*/
+        .content-with-photos .btn {
+            font-family: 'Intro Regular', sans-serif;
+            position: absolute;
+            top: 85%;
+            left: 45%;
+            background-color: antiquewhite;
+            color: black;
+            font-size: 16px;
+            padding: 12px 24px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .content-with-photos .btn:hover {
+            background-color: #a1c298;
+            color: antiquewhite;
+        }
+
+         /*Bagrunds farve med informationstekst*/
+        .content1{
+            height:700px;
+            width: 100%;
+            background: #a1c298
+        }
+         /*Informations tekst på venstre side lige under billede*/
+        .headerAlign{
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+            text-align-last: left;
+            font-family: 'Intro Black', sans-serif;
+            font-weight: bold;
+            color: White;
+        }
+        .information{
+            padding: 10px;
+            margin: 15px;
+            font-size: 18px;
+            font-family: 'Intro Regular', sans-serif;
+            text-align-last: left;
+            text-align: left;
+            line-height: 1.6;
+            width: 30em;
+            color: White;
+        }
+        .UN12button1 {
+            margin: 30px 15px;
+            padding: 16px 32px;
+        }
+
+
+
+        /*Informations tekst på højreside */
+        .headerAlignReverse{
+            padding: 10px;
+            margin: 10px;
+            font-size: 30px;
+            text-align: right;
+            font-family: 'Intro Black', sans-serif;
+            font-weight: bold;
+            color: White;
+        }
+        /* TODO: Teksten skulle gerne stå på højre side*/
+        .informationReverse{
+            padding: 10px;
+            margin: 10px;
+            font-size: 18px;
+            font-family: 'Intro Regular', sans-serif;
+            text-align-last: right;
+            text-align: right;
+            float: right;
+            line-height: 1.6;
+            width: 30em;
+            color: White;
+        }
+
+         /*Bagrundsfarve med knapper*/
+         .content2{
+             height:110px;
+             width: 100%;
+             background: antiquewhite;
+             font-family: 'Intro Black', sans-serif;
+         }
+         /*Knapper med "links" til artikler TODO billede knapper virker ikke*/
+         .button-group-omtale .button {
+            background-color:antiquewhite;
+            /*border: none;*/
+            border: 2px solid #a1c298;
+            color: black;
+            padding:10px 24px;
+            /*padding: 15px 32px;*/
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 10px;
+            margin: 10px 10px;
+            cursor: pointer;
+            font-family: 'Intro Demo', sans-serif;
+            font-weight: bold;
+        }
+         .button1{
+            background-color: antiquewhite;
+            color: black;
+            border: 5px solid #a1c298;
+        }
+         .button1:hover{
+            background-color: #a1c298;
+            color: white;
+        }
+
+         /*Bunden af hjemmesiden TODO kontakt, bliv aktiv, sociale medieer*/
+        .footer{
+            height: 400px;
+            width: 100%;
+            background: antiquewhite;
+        }
+         .footerHeaderText{
+             padding: 50px;
+             font-size: 18px;
+             text-align-last: left;
+             font-family: 'Intro Black', sans-serif;
+             font-weight: bold;
+             color: black;
+         }
+         .footerInformation{
+             padding: 50px;
+             margin: 5px;
+             font-size: 14px;
+             font-family: 'Intro Regular', sans-serif;
+             text-align-last: left;
+             text-align: left;
+             line-height: 1.6;
+             width: 15em;
+             color: black;
+         }
+         /*Bliv aktiv*/
+         /*.blivAktiv{
+             text-align-last: center;
+             left: 60%;
+         }  */
+
+    </style>
+
+
+</head>
+<body>
+<div class="container">
+    <!--Hjemmesidens header-->
+    <div class="header">
+        <!--  Menubar / øverste på hjemmesiden     -->
+       <div class="button-group">
+        <!--  <input type="image" name="logo button" src="/StopMadSpildLogocopy.png" alt="text" height="70px"width="70px">-->
+           <button class="button"><input type="image"name="logo button"src="/StopMadSpildLogocopy.png" alt="text" height="40px"width="40px"></button>
+           <button class="button">OM MADSPILD</button>
+           <button class="button">OM ORGANISATIONEN</button>
+           <button class="button">VORES PROJEKTER</button>
+           <button class="button">BLIV AKTIV</button>
+           <button class="button"><input type="image"name="search button"src="/searchIcon.png" alt="search button" height="20px"width="20px"></button>
+
+       </div>
+    </div>
+
+    <!--Lige efter menubar - Billede med tekst og "Læs mere" knap-->
+    <div class="content-with-photos">
+        <!--Andet billede <img src="/StopSpildAfMad1.png" alt="billde" width="100%">-->
+        <img src="/supermarket2.jpg" alt="billde" width="100%">
+        <!-- Små bogstaver:       <div class="bigTextCentered">Danmarks største bevægelse mod madspild</div>-->
+        <div class="bigTextCentered">DANMARKS STØRSTE BEVÆGELSE MOD MADSPILD</div>
+
+        <button class="btn">Læs mere</button>
+<!--        <div class="smallTextCentered">Over 60.000 danskere siger nej til madspild</div>-->
+    </div>
+
+    <!--Lige efter billedet-->
+    <div class="content1">
+        <p class="headerAlign">OM STOP SPILD AF MAD</p>
+        <p class="information">
+            Stop Spild Af Mad og dens stifter Selina Juul har fået en lang række
+            priser og anerkendelser, bl.a.:
+        </p>
+        <p class="information">
+            Stop Spild Af Mad har nationale og internationale samarbejder og vi bakkes op af over
+            60.000 danskere samt en lang række toneangivende toppolitikere og anerkendte madpersonligheder,
+            som ikke vil finde sig i madspild. Stop Spild Af Mad optræder i mange nationale og
+            internationale medier, bl.a. på BBC og CNN. Stop Spild Af Mad arbejder aktivt med realiseringen
+            af FN’s verdensmål for bæredygtig udvikling UN Sustainable Development Goal 12.3.
+        </p>
+        <a class="button UN12button1" href=https://sdgs.un.org/goals/goal12><input type="image" name="UN12 botton"src="/Sustainable_Development_Goals_logo.svg.png" alt="text" height="200px"width="250px"></a>
+        <a class="button UN12button1" href=https://sdgs.un.org/goals/goal12><input type="image" name="UN12 botton"src="/UNgoal12.png" alt="text" height="100px"width="100px"></a>
+
+    </div>
+
+    <!--Knapper til links med artikler-->
+    <div class="content2">
+            <!--   <p class="headerAlignReverse">SE VORES OMTALE</p>-->
+        <p class="headerAlign"></p>
+        <div class="button-group-omtale">
+            <a class="button button1" href="https://www.bbc.com/news/av/magazine-39083056">BBC</a>
+            <a class="button button1" href="https://www.berlingske.dk/samfund/selina-juul-hyldes-i-internationale-medier-man-skal-aldrig-undervurdere-hvor-stor">Berlingske</a>
+            <a class="button button1" href="https://www.dr.dk/ligetil/indland/10000-fattige-danskere-faar-julemad-fra-supermarkeder">DR</a>
+            <a class="button button1" href="https://jyllands-posten.dk/indland/ECE8901510/videncenter-vil-bekaempe-madspild-med-ny-hjemmeside/">Jyllands-Posten</a>
+            <a class="button button1" href="https://www.nationalgeographic.com/people-and-culture/food/the-plate/2016/09/denmark-harnesses-its-own-culture-to-stop-food-waste/">National Geographic</a>
+            <a class="button button1" href="https://politiken.dk/forbrugogliv/art5872580/Madspildsaktivist-Private-er-stadig-de-st%C3%B8rste-syndere">Politiken</a>
+            <a class="button button1" href="https://www.huffpost.com/entry/the-fight-against-food-wa_b_14632156">The Huffington Post</a>
+            <a class="button button1" href="https://nyheder.tv2.dk/samfund/2017-03-03-saadan-undgaar-du-madspild">TV2 News</a>
+
+
+            <!--LOGO KNAPPER ISTEDET FOR TEKST KNAPPER - virker dog ikke-->
+            <!--<input type="image" name="logo button" src="/BBC-logo-1.png" alt="bbc" height="70px"width="80px"></div>
+            <input type="image" name="logo button" src="/Berlingskelogo.png" alt="text" height="40px"width="100px"></div>
+            <input type="image" name="logo button" src="/DR_logo.png" alt="text" height="70px"width="70px"></div>
+            <input type="image" name="logo button" src="/JyllandsPosten.png" alt="text" height="70px"width="70px"></div>
+            <input type="image" name="logo button" src="/NationalGeographic.png" alt="text" height="70px"width="70px"></div>
+            <input type="image" name="logo button" src="/Politikenlogo.png" alt="text" height="70px"width="70px"></div>
+            <input type="image" name="logo button" src="/The_Huffington_Post_logo.png" alt="text" height="70px"width="70px"></div>
+            <input type="image" name="logo button" src="/TV2.png" alt="text" height="70px"width="70px"></div>
+-->
+
+
+
+        </div>
+
+</div>
+
+    <div class="content1">
+        <p class="headerAlignReverse">PRISER OG ANERKENDELSER</p>
+        <p class="informationReverse">
+            Vi er Danmarks største bevægelse mod madspild. Stop Spild Af Mad er en non-profit,
+            frivillig forbrugerbevægelse, som kæmper mod madspild og siden 2008 har
+            medvirket til at bringe massivt fokus på madspild i Danmark samt opnået en
+            lang række resultater i både Danmark og i samarbejde med Regeringen, EU, Norden og FN.
+            Vi bragte fokus på madspild i Danmark og vi bragte Danmarks kamp mod madspild på verdenskortet.
+            Danmark genererer årligt madspild på mange hundrede tusind tons - og det kæmper vi for at stoppe.
+        </p>
+    </div>
+
+    <!--Hjemmesidens footer-->
+        <div class="footer">
+            <p class="footerHeaderText">Stop Spild Af Mad</p>
+            <p class="footerInformation">Vi er Danmarks største bevægelse mod madspild. Vi har igangsat kampen mod madspild i Danmark og vi bragte Danmarks kamp mod madspild på verdenskortet.</p>
+        <!--<p class="blivAktiv">Bliv aktiv</p>-->
+        </div>
+
+</div>
+
+</body>
+</html>
